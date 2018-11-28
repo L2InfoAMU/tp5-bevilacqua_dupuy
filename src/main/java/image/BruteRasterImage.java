@@ -20,6 +20,9 @@ public class BruteRasterImage {
     }
 
     public BruteRasterImage(Color[][] colors){
+        requiresNonNull(colors);
+        requiresNonZeroDimensions(colors);
+        requiresRectangularMatrix(colors);
         for (int x = 0; x < getRowCount(colors); x++) {
             this.colors[x] = colors[x];
             for (int y = 0; y < colors[x].length; y++) {
