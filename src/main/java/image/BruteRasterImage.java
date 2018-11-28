@@ -30,4 +30,10 @@ public class BruteRasterImage {
             }
         }
     }
+
+    public void createRepresentation() { }
+
+    public void setPixelColor(Color color, int x, int y){
+        colors[x][y] = color;
+    }
 }
