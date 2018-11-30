@@ -4,7 +4,7 @@ import java.awt.*;
 
 import static util.Matrices.*;
 
-public class BruteRasterImage {
+public class BruteRasterImage implements Image{
 
 
     private  Color color;
@@ -32,7 +32,7 @@ public class BruteRasterImage {
     }
 
     public void createRepresentation() {
-        Color colors[][] = new Color[][] ;
+
     }
 
     public void setPixelColor(Color color, int x, int y){
@@ -42,4 +42,19 @@ public class BruteRasterImage {
     public Color getPixelColor(int x, int y){
         return colors[x][y];
     }
+
+
+    public int getWidth() {
+        return 0;
+    }
+
+
+    public int getHeight() {
+        return 0;
+    }
+
+    private void setPixelsColor(Color[][] pixels){
+
+    }
+
 }
