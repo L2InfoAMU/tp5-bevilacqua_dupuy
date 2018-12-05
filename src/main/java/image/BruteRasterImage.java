@@ -48,7 +48,7 @@ public class BruteRasterImage implements Image{
 
     public int getHeight() { return this.height; }
 
-    protected void setWidth(int width) { this.widht = widht; }
+    protected void setWidth(int widht) { this.widht = widht; }
 
     protected void setHeight(int height) { this.height = height; }
 
