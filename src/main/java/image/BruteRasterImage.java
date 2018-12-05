@@ -53,6 +53,14 @@ public class BruteRasterImage implements Image{
         }
     }
 
+    private void setPixelsColor(Color color){
+        for (int x = 0; x < getRowCount(colors); x++) {
+            for (int y = 0; y < colors[x].length; y++) {
+                this.colors[x][y] = color;
+            }
+        }
+    }
+
     public int getWidth() { return this.width; }
 
     public int getHeight() { return this.height; }
