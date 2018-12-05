@@ -2,6 +2,8 @@ package image;
 
 import java.awt.*;
 
+
+
 import static util.Matrices.*;
 
 public class BruteRasterImage implements Image{
