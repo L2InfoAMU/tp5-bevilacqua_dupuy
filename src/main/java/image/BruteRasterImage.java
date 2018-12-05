@@ -8,14 +8,14 @@ public class BruteRasterImage implements Image{
 
 
     private  Color color;
-    private  int widht;
+    private  int width;
     private  int height;
     private  Color[][] colors;
 
 
     public BruteRasterImage(Color color, int width, int height){
         this.color = color;
-        this.widht = width;
+        this.width = width;
         this.height = height;
     }
 
@@ -44,11 +44,11 @@ public class BruteRasterImage implements Image{
 
     private void setPixelsColor(Color[][] pixels){ }
 
-    public int getWidth() { return this.widht; }
+    public int getWidth() { return this.width; }
 
     public int getHeight() { return this.height; }
 
-    protected void setWidth(int widht) { this.widht = widht; }
+    protected void setWidth(int width) { this.width = width; }
 
     protected void setHeight(int height) { this.height = height; }
 
