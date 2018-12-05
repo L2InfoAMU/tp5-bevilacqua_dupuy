@@ -31,7 +31,7 @@ public class BruteRasterImage implements Image{
     }
 
     public void createRepresentation() {
-        Color[][] Representation = new Color[][] ;
+        BruteRasterImage Representation = new BruteRasterImage(colors) ;
     }
 
     public void setPixelColor(Color color, int x, int y){
