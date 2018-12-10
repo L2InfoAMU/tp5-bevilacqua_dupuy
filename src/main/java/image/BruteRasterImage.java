@@ -25,15 +25,14 @@ public class BruteRasterImage implements Image{
     }
 
     public BruteRasterImage(Color[][] colors){
-        requiresNonNull(colors);
-        requiresNonZeroDimensions(colors);
-        requiresRectangularMatrix(colors);
-        for (int x = 0; x < getRowCount(colors); x++) {
-            for (int y = 0; y < colors[x].length; y++) {
-                this.colors[x][y] = colors[x][y];
+        pixels = new Color[this.width][this.height];
+        for(int x = 0; x < this.width; x++){
+            for(int y = 0; y < this.height; y++){
+                pixels[x][y] = colors[x][y];
             }
         }
     }
+
 
     public void createRepresentation() {
         BruteRasterImage Representation = new BruteRasterImage(colors) ;
