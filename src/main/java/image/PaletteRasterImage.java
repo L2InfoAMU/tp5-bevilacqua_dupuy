@@ -58,5 +58,11 @@ public class PaletteRasterImage {
     }
 
     private void setPixelsColor(Color color) {
+        for(int x = 0 ; x<this.width ; x++ ){
+            for(int y = 0 ; y<this.height ; y++){
+                pixels[x][y] = color;
+            }
+        }
+
     }
 }
