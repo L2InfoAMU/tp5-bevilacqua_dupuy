@@ -45,6 +45,10 @@ public class PaletteRasterImage {
         }
     }
 
+    public Color getPixelColor(int x, int y){
+        return this.pixels[x][y];
+    }
+
     private void setPixelsColor(Color color) {
     }
 }
