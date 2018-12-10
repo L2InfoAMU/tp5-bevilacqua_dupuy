@@ -1,6 +1,6 @@
 package image;
 
-import javafx.scene.paint.Color;
+import java.awt.*;
 
 public class RasterUniformImageFactory implements ImageFactory {
     private int width;
@@ -14,6 +14,8 @@ public class RasterUniformImageFactory implements ImageFactory {
         this.color = color;
         this.rasterImageType = rasterImageType;
     }
+
+
 
     @Override
     public Image makeImage() {

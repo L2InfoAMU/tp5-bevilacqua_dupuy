@@ -50,7 +50,7 @@ public class Display implements Initializable {
     }
 
     private void renderPixel(int x, int y, PixelWriter pixelWriter) {
-        pixelWriter.setColor(x, y, image.getPixelColor(x, y));
+        pixelWriter.setColor(x, y, image.getPixelColor(y, x));
     }
 
 }
