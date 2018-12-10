@@ -38,6 +38,13 @@ public class PaletteRasterImage {
         this.pixels = new Color[this.width][this.height];
     }
 
+    public void setPixelColor(Color color, int x, int y){
+        this.pixels[x][y] = color;
+        if(this.palette.contains(color) == false){
+            this.palette.add(color);
+        }
+    }
+
     private void setPixelsColor(Color color) {
     }
 }
