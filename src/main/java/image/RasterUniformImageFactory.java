@@ -1,6 +1,6 @@
 package image;
 
-import java.awt.*;
+import javafx.scene.paint.Color;
 
 public class RasterUniformImageFactory implements ImageFactory {
     private int width;
