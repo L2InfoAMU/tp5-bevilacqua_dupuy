@@ -9,16 +9,19 @@ import static util.Matrices.*;
 public class BruteRasterImage implements Image{
 
 
-    private  Color color;
+
     private  int width;
     private  int height;
-    private  Color[][] colors;
+    private  Color[][] pixels;
 
 
     public BruteRasterImage(Color color, int width, int height){
-        this.color = color;
+
+        pixels = new Color[width][height];
         this.width = width;
         this.height = height;
+        setPixelsColor(color);
+
     }
 
     public BruteRasterImage(Color[][] colors){
