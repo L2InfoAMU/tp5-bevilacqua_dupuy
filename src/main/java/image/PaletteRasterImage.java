@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import static util.Matrices.*;
 
-public class PaletteRasterImage {
+public class PaletteRasterImage extends RasterImage{
 
     
     private  int width;
