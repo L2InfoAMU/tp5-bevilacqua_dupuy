@@ -25,6 +25,9 @@ public class BruteRasterImage implements Image{
     }
 
     public BruteRasterImage(Color[][] colors){
+        requiresNonNull(colors);
+        requiresNonZeroDimensions(colors);
+        requiresRectangularMatrix(colors);
         pixels = new Color[this.width][this.height];
         for(int x = 0; x < this.width; x++){
             for(int y = 0; y < this.height; y++){
@@ -46,9 +49,10 @@ public class BruteRasterImage implements Image{
         requiresNonNull(pixels);
         requiresNonZeroDimensions(pixels);
         requiresRectangularMatrix(pixels);
-        for (int x = 0; x < getRowCount(pixels); x++) {
-            for (int y = 0; y < pixels[x].length; y++) {
-                this.colors[x][y] = pixels[x][y];
+        for(int x = 0 ; x<this.width ; x++ ){
+            for(int y = 0 ; y<this.height ; y++){
+                this.pixels[x][y] = pixels[x][y];
+
             }
         }
     }
