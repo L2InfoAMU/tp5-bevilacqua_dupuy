@@ -5,8 +5,6 @@ import static util.Matrices.*;
 
 public class BruteRasterImage implements Image{
 
-
-
     private  int width;
     private  int height;
     private  Color[][] pixels;
