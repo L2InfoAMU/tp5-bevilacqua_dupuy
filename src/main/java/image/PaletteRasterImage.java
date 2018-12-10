@@ -22,15 +22,21 @@ public class PaletteRasterImage {
         setPixelsColor(color);
     }
 
-    public PaletteRasterImage(Color[][] pixels){
+    public PaletteRasterImage(Color[][] pixels) {
         requiresNonNull(pixels);
         requiresNonZeroDimensions(pixels);
         requiresRectangularMatrix(pixels);
-        for(int x = 0; x < this.width; x++) {
+        for (int x = 0; x < this.width; x++) {
             for (int y = 0; y < this.height; y++) {
                 this.palette.add(pixels[x][y]);
             }
         }
+    }
+
+    public void createRepresentation(){
+        this.palette = new ArrayList<Color>();
+        this.pixels = new Color[this.width][this.height];
+    }
 
     private void setPixelsColor(Color color) {
     }
